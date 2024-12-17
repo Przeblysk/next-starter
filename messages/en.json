@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": " Next.js starter template!"
+    "title": "Next.js starter template!"
+  },
+  "Auth": {
+    "sign-in": "Sign in",
+    "sign-out": "Sign out",
+    "my-account": "My Account"
   }
 }
