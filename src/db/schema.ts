@@ -43,11 +43,11 @@ export const accounts = pgTable(
     sessionState: text("session_state"),
     ...timestamps
   },
-  (account) => ({
-    compoundKey: primaryKey({
+  (account) => [
+    primaryKey({
       columns: [account.provider, account.providerAccountId]
     })
-  })
+  ]
 )
 
 export const sessions = pgTable("session", {
@@ -67,11 +67,11 @@ export const verificationTokens = pgTable(
     expires: timestamp("expires", { mode: "date" }).notNull(),
     ...timestamps
   },
-  (verificationToken) => ({
-    compositePk: primaryKey({
+  (verificationToken) => [
+    primaryKey({
       columns: [verificationToken.identifier, verificationToken.token]
     })
-  })
+  ]
 )
 
 export const authenticators = pgTable(
@@ -89,9 +89,9 @@ export const authenticators = pgTable(
     transports: text("transports"),
     ...timestamps
   },
-  (authenticator) => ({
-    compositePK: primaryKey({
+  (authenticator) => [
+    primaryKey({
       columns: [authenticator.userId, authenticator.credentialID]
     })
-  })
+  ]
 )
