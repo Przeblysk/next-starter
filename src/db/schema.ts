@@ -9,8 +9,8 @@ import {
 import type { AdapterAccountType } from "next-auth/adapters"
 
 const timestamps = {
-  updated_at: timestamp(),
   created_at: timestamp().defaultNow().notNull(),
+  updated_at: timestamp(),
   deleted_at: timestamp()
 }
 
