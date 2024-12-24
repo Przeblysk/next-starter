@@ -1,6 +1,7 @@
 {
   "HomePage": {
-    "title": "Next.js 启动模板!"
+    "title": "Next.js 启动模板!",
+    "description": "Next.js 启动模板,带有 TypeScript, Tailwind CSS, Next-auth, i18n, Drizzle, Eslint, Prettier. 快速启动项目,高效工作。"
   },
   "Auth": {
     "sign-in": "登录",
