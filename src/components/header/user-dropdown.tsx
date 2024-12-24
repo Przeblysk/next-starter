@@ -30,7 +30,7 @@ export const UserDropdown = ({ session: { user } }: { session: Session }) => {
       <DropdownMenuContent align="end">
         <DropdownMenuLabel>{t("Auth.my-account")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <div className="flex flex-col items-center justify-center p-2">
+        <div className="w-[200px] flex flex-col items-center justify-center p-2">
           <Image
             className="overflow-hidden rounded-full"
             src={`${user?.image}`}
@@ -39,6 +39,7 @@ export const UserDropdown = ({ session: { user } }: { session: Session }) => {
             height={100}
           />
           <h2 className="py-2 text-lg font-bold">{user?.name}</h2>
+          <p className="text-sm text-muted-foreground">{user?.email}</p>
         </div>
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={() => signOut()}>
