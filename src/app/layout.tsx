@@ -8,6 +8,8 @@ import { PropsWithChildren } from "react"
 
 import "./globals.css"
 
+import { TailwindIndicator } from "@/components/tailwind-indicator"
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"]
@@ -34,6 +36,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
           <ThemeProvider attribute="class">
             <Header />
             {children}
+            <TailwindIndicator />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
