@@ -9,12 +9,13 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Locale } from "@/i18n/config"
 import { setUserLocale } from "@/services/locale"
+import { Loader2 } from "lucide-react"
 import { useLocale } from "next-intl"
 import { useTransition } from "react"
 
 const LanguageLabel: Record<string, string> = {
-  en: "EN",
-  zh: "中文"
+  en: "🇺🇸 English",
+  zh: "🇨🇳 简体中文"
 }
 
 const availableLanguageTags = ["en", "zh"]
@@ -31,8 +32,12 @@ export const LanguageSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className="relative h-8 w-8 rounded-sm" variant="ghost">
-          {LanguageLabel[locale]}
+        <Button className="relative h-8 w-20 rounded-sm" variant="ghost">
+          {isPending ? (
+            <Loader2 className="mr-2 size-4 animate-spin" />
+          ) : (
+            LanguageLabel[locale]
+          )}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
