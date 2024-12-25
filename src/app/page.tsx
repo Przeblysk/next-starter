@@ -1,3 +1,4 @@
+import { HelloForm } from "@/components/hello-form"
 import { useTranslations } from "next-intl"
 
 export default function Home() {
@@ -8,9 +9,10 @@ export default function Home() {
         <h1 className="text-5xl font-bold  text-center mb-2">
           {t("HomePage.title")}
         </h1>
-        <p className="max-w-2xl text-center text-muted-foreground">
+        <p className="max-w-2xl text-center text-muted-foreground mb-4">
           {t("HomePage.description")}
         </p>
+        <HelloForm />
       </section>
     </div>
   )
