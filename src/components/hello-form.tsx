@@ -51,7 +51,7 @@ export const HelloForm = () => {
             <FormItem>
               <FormControl>
                 <Input
-                  className="w-[300px]"
+                  className="w-[200px] sm:w-[300px]"
                   placeholder={t("HomePage.message-placeholder")}
                   {...field}
                 />
