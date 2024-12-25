@@ -17,7 +17,7 @@ export const SignInButton = () => {
   }
 
   return (
-    <Button onClick={handleSignIn} disabled={isPending}>
+    <Button className="font-bold" onClick={handleSignIn} disabled={isPending}>
       {isPending && <Loader2 className="mr-2 size-4 animate-spin" />}
       {t("Auth.sign-in")}
     </Button>
