@@ -2,7 +2,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_APP_URL!
 
 export const siteConfig = {
   url: SITE_URL,
-  name: "Next.js Starter",
+  name: "Next Starter",
   description:
     "A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, i18n, Drizzle,Eslint, Prettier. Start your project quickly and efficiently.",
   keywords: [
