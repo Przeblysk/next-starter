@@ -8,6 +8,8 @@
   "Auth": {
     "sign-in": "Sign in",
     "sign-out": "Sign out",
-    "my-account": "My Account"
+    "my-account": "My Account",
+    "welcome-back": "Welcome back",
+    "choose-sign-in-method": "Choose a sign-in method"
   }
 }

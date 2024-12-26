@@ -8,6 +8,8 @@
   "Auth": {
     "sign-in": "登录",
     "sign-out": "退出登录",
-    "my-account": "我的账户"
+    "my-account": "我的账户",
+    "welcome-back": "欢迎回来",
+    "choose-sign-in-method": "选择登录方式"
   }
 }

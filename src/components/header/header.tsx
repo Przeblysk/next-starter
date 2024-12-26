@@ -1,9 +1,9 @@
 import { siteConfig } from "@/config/site"
 import { auth } from "@/lib/auth"
 
+import { LoginFormDialog } from "../auth/login-form-dialog"
 import { Logo } from "../logo"
 import { LanguageSwitcher } from "./language-switcher"
-import { SignInButton } from "./sign-in-button"
 import { ThemeSwitcher } from "./theme-switcher"
 import { UserDropdown } from "./user-dropdown"
 
@@ -16,7 +16,7 @@ export const Header = async () => {
         <Logo className="mx-4" />
         <h3 className="hidden text-xl font-bold sm:block">{siteConfig.name}</h3>
         <nav className="flex items-center gap-1 ml-auto">
-          {session ? <UserDropdown session={session} /> : <SignInButton />}
+          {session ? <UserDropdown session={session} /> : <LoginFormDialog />}
           <ThemeSwitcher />
           <LanguageSwitcher />
         </nav>
