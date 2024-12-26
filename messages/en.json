@@ -3,7 +3,8 @@
     "title": "Next.js starter template!",
     "description": "A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, i18n, Drizzle, Eslint, Prettier. Start your project quickly and efficiently.",
     "message-placeholder": "Type everything you want to say here...",
-    "submit": "Submit"
+    "submit": "Submit",
+    "hello-form-message-min-length": "Your message must be at least 3 characters long."
   },
   "Auth": {
     "sign-in": "Sign in",

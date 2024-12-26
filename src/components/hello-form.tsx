@@ -16,14 +16,21 @@ import { useTranslations } from "next-intl"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
-const formSchema = z.object({
-  message: z.string().min(3)
-})
+const useFormSchema = () => {
+  const t = useTranslations()
+  const schema = z.object({
+    message: z
+      .string()
+      .min(3, { message: t("HomePage.hello-form-message-min-length") })
+  })
+  return schema
+}
 
-type FormSchema = z.infer<typeof formSchema>
+type FormSchema = z.infer<ReturnType<typeof useFormSchema>>
 
 export const HelloForm = () => {
   const t = useTranslations()
+  const formSchema = useFormSchema()
 
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
