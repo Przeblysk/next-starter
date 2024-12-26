@@ -28,10 +28,13 @@ The fastest way to deploy this template is through Vercel:
 3. Select a repository name
 4. Configure your environment variables in Vercel dashboard:
    ```env
-   DATABASE_URL=your_database_url
-   NEXTAUTH_SECRET=your_nextauth_secret
-   GITHUB_CLIENT_ID=your_github_client_id
-   GITHUB_CLIENT_SECRET=your_github_client_secret
+   NEXT_PUBLIC_APP_URL=your_app_url
+   AUTH_SECRET=your_auth_secret
+   AUTH_GITHUB_ID=your_github_auth_client_id
+   AUTH_GITHUB_SECRET=your_github_auth_client_secret
+   AUTH_GOOGLE_CLIENT_ID=your_google_auth_client_id
+   AUTH_GOOGLE_CLIENT_SECRET=your_google_auth_client_secret
+   AUTH_DRIZZLE_URL=your_postgresql_url
    ```
 5. Deploy! 🎉
 
