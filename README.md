@@ -32,8 +32,8 @@ The fastest way to deploy this template is through Vercel:
    AUTH_SECRET=your_auth_secret
    AUTH_GITHUB_ID=your_github_auth_client_id
    AUTH_GITHUB_SECRET=your_github_auth_client_secret
-   AUTH_GOOGLE_CLIENT_ID=your_google_auth_client_id
-   AUTH_GOOGLE_CLIENT_SECRET=your_google_auth_client_secret
+   AUTH_GOOGLE_ID=your_google_auth_client_id
+   AUTH_GOOGLE_SECRET=your_google_auth_client_secret
    AUTH_DRIZZLE_URL=your_postgresql_url
    ```
 5. Deploy! 🎉
