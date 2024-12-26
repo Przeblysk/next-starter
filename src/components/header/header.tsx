@@ -13,8 +13,8 @@ export const Header = async () => {
   return (
     <header className="border-grid sticky top-0 z-50 w-full h-[64px] border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container w-full mx-auto flex h-16 items-center">
-        <Logo className="mr-4" />
-        <h3 className="text-xl font-bold">{siteConfig.name}</h3>
+        <Logo className="mx-4" />
+        <h3 className="hidden text-xl font-bold sm:block">{siteConfig.name}</h3>
         <nav className="flex items-center gap-1 ml-auto">
           {session ? <UserDropdown session={session} /> : <SignInButton />}
           <ThemeSwitcher />
