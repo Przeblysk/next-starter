@@ -15,14 +15,14 @@ const Footer = () => {
             </div>
             <div className="flex space-x-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/Przeblysk/next-starter"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors">
                 <FaGithub className="h-6 w-6" />
               </Link>
               <Link
-                href="https://twitter.com"
+                href="https://x.com/Przeblysk214"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors">
