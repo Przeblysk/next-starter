@@ -3,8 +3,8 @@
 import { cn } from "@/lib/utils"
 import { signIn } from "next-auth/react"
 import { useTranslations } from "next-intl"
-import Image from "next/image"
 import { useTransition } from "react"
+import { FaGithub, FaGoogle } from "react-icons/fa"
 
 import { Button } from "../ui/button"
 import {
@@ -58,13 +58,7 @@ export function LoginForm({ variant = "default" }: LoginFormProps) {
           onClick={() => handleSignIn("github")}
           disabled={isPending}
           className="w-full">
-          <Image
-            src="/github.svg"
-            alt="Github"
-            width={16}
-            height={16}
-            className="mr-2"
-          />
+          <FaGithub className="h-6 w-6" />
           Github
         </Button>
         <Button
@@ -72,13 +66,7 @@ export function LoginForm({ variant = "default" }: LoginFormProps) {
           onClick={() => handleSignIn("google")}
           disabled={isPending}
           className="w-full">
-          <Image
-            src="/google.svg"
-            alt="Google"
-            width={16}
-            height={16}
-            className="mr-2"
-          />
+          <FaGoogle className="h-6 w-6" />
           Google
         </Button>
       </CardContent>

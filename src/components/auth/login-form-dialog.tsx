@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog"
@@ -29,10 +30,13 @@ export function LoginFormDialog({
           {triggerText}
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] flex flex-col items-center justify-center">
         <DialogTitle className="py-2 text-center text-2xl">
           {t("Auth.welcome-back")}
         </DialogTitle>
+        <DialogDescription className="text-center">
+          {t("Auth.choose-sign-in-method")}
+        </DialogDescription>
         <LoginForm variant="plain" />
       </DialogContent>
     </Dialog>
