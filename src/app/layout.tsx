@@ -1,4 +1,3 @@
-import { Header } from "@/components/header/header"
 import { ThemeProvider } from "@/components/theme-provider"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale, getMessages } from "next-intl/server"
@@ -32,7 +31,6 @@ export default async function RootLayout({ children }: PropsWithChildren) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class">
-            <Header />
             {children}
             <Toaster />
             <TailwindIndicator />
