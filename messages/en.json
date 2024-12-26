@@ -11,5 +11,9 @@
     "my-account": "My Account",
     "welcome-back": "Welcome back",
     "choose-sign-in-method": "Choose a sign-in method"
+  },
+  "HelloAction": {
+    "not-logged-in-message": "Your message is from server.This is your message 👉 {message}",
+    "logged-in-message": "Hello {username} 👋, This message is from server!!!This is your message 👉 {message}"
   }
 }

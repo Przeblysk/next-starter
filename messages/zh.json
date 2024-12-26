@@ -11,5 +11,9 @@
     "my-account": "我的账户",
     "welcome-back": "欢迎回来",
     "choose-sign-in-method": "选择登录方式"
+  },
+  "HelloAction": {
+    "not-logged-in-message": "来自服务器的消息。这是你的消息 👉 {message}",
+    "logged-in-message": "你好 {username} 👋,来自服务器!!!这是你的消息 👉 {message}"
   }
 }

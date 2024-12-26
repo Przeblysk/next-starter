@@ -1,16 +1,23 @@
 "use server"
 
 import { auth } from "@/lib/auth"
+import { getTranslations } from "next-intl/server"
 
 export const helloAction = async (message: string) => {
   const session = await auth()
+  const t = await getTranslations()
 
   if (!session || !session.user) {
     return {
-      message: `Your message is from server.This is your message 👉 ${message}`
+      message: t("HelloAction.not-logged-in-message", {
+        message
+      })
     }
   }
   return {
-    message: `Hello ${session.user.name} 👋, This message is from server!!!This is your message 👉 ${message}`
+    message: t("HelloAction.logged-in-message", {
+      username: session.user.name,
+      message
+    })
   }
 }
