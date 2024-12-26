@@ -1,6 +1,10 @@
 # Next.js Starter Template
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 A modern, feature-rich Next.js starter template to kickstart your web development projects with best practices and powerful tools pre-configured.
+
+[![Next Starter](./public/og.png)](https://next-starter.przeblysk.com/)
 
 ## ✨ Features
 
