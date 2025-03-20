@@ -16,7 +16,7 @@ export const helloAction = async (message: string) => {
   }
   return {
     message: t("HelloAction.logged-in-message", {
-      username: session.user.name,
+      username: session.user.name ?? "",
       message
     })
   }
