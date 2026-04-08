@@ -22,7 +22,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dotenv": "^17.2.3",
-    "drizzle-orm": "^0.45.1",
+    "drizzle-orm": "^0.45.2",
     "lucide-react": "^0.562.0",
     "next": "16.1.6",
     "next-auth": "5.0.0-beta.30",
